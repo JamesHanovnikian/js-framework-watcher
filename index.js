@@ -1,4 +1,8 @@
-/* global Chart */
+/* global Chart, axios */
+
+axios.get("https://api.github.com/repos/vuejs/vue").then(function (response) {
+  console.log(response);
+});
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
