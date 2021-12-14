@@ -1,17 +1,36 @@
 /* global Chart, axios */
 
+// let stars = response.data["stargazers_count"];
+// let watchers = response.data["subscribers_count"];
+// let forksCount = response.data["forks"];
+
+let vue = {};
+let angular = {};
+let ember = {};
+let svelte = {};
+let react = {};
+
+
 axios.get("https://api.github.com/repos/vuejs/vue").then(function (response) {
-  console.log(response);
+  // console.log(response.data);
+  let stars = response.data["stargazers_count"];
+  let watchers = response.data["subscribers_count"];
+  let forksCount = response.data["forks"];
+  vue["stars"] = stars;
+  vue["watchers"] = watchers;
+  vue["forks"] = forksCount;
+  console.log(vue);
 });
+
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['VueJS Forks', 'VueJS Stars', 'Vue JS watchers', 'Orange'],
     datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
+      label: '# of People',
+      data: [2, 4, 6, 5, 2, 3],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
