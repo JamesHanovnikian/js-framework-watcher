@@ -11,65 +11,26 @@ let labels = [];
 
 
 
-axios.get("https://api.github.com/repos/vuejs/vue").then(function (response) {
-  // console.log(response.data);
-  let stars = response.data["stargazers_count"];
-  let watchers = response.data["subscribers_count"];
-  let forksCount = response.data["forks"];
-  forks["Vue"] = forksCount;
-  stars["Vue"] = stars;
-  watchers["Vue"] = watchers;
-});
-
-axios.get("https://api.github.com/repos/angular/angular.js").then(function (response) {
-  // console.log(response.data);
-  let stars = response.data["stargazers_count"];
-  let watchers = response.data["subscribers_count"];
-  let forksCount = response.data["forks"];
-  forks["Angular"] = forksCount;
-  stars["Angular"] = stars;
-  watchers["Angular"] = watchers;
-});
-
-axios.get("https://api.github.com/repos/emberjs/ember.js").then(function (response) {
-  // console.log(response.data);
-  let stars = response.data["stargazers_count"];
-  let watchers = response.data["subscribers_count"];
-  let forksCount = response.data["forks"];
-  forks["Ember"] = forksCount;
-  stars["Ember"] = stars;
-  watchers["Ember"] = watchers;
-});
-
-axios.get("https://api.github.com/repos/sveltejs/svelte").then(function (response) {
-  // console.log(response.data);
-  let stars = response.data["stargazers_count"];
-  let watchers = response.data["subscribers_count"];
-  let forksCount = response.data["forks"];
-  forks["Svelte"] = forksCount;
-  stars["Svelte"] = stars;
-  watchers["Svelte"] = watchers;
-});
+function fetchGithub(url, framework) {
+  axios.get(url).then(function (response) {
+    console.log(response.data);
+    forks[framework] = response.data["forks"];
+    forks[framework] = response.data["forks"];
+  });
+}
 
 
-axios.get("https://api.github.com/repos/facebook/react").then(function (response) {
-  // console.log(response.data);
-  let stars = response.data["stargazers_count"];
-  let watchers = response.data["subscribers_count"];
-  let forksCount = response.data["forks"];
-  forks["React"] = forksCount;
-  stars["React"] = stars;
-  watchers["React"] = watchers;
-});
+console.log(fetchGithub("https://api.github.com/repos/facebook/react", "React"));
+console.log(forks);
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['Vue Forks', 'VueJS Stars', 'Vue watchers', 'Angular Stars'],
+    labels: ['hello'],
     datasets: [{
       label: '# of People',
-      data: [2, 4, 6, 5, 2, 3],
+      data: [forks["React"]],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -97,3 +58,15 @@ var myChart = new Chart(ctx, {
     }
   }
 });
+
+// axios.get("https://api.github.com/repos/facebook/react").then(function (response) {
+//   // console.log(response.data);
+//   let stars = response.data["stargazers_count"];
+//   let watchers = response.data["subscribers_count"];
+//   let forksCount = response.data["forks"];
+//   forks["React"] = forksCount;
+//   stars["React"] = stars;
+//   watchers["React"] = watchers;
+// });
+
+
