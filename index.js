@@ -53,19 +53,19 @@ axios
               data: [vueResponse.stargazers_count, vueResponse.subscribers_count, vueResponse.forks],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)'
               ],
               borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(255, 99, 132, 0.7)',
+                'rgba(255, 99, 132, 0.7)',
+                'rgba(255, 99, 132, 0.7)',
+                'rgba(255, 99, 132, 0.7)',
+                'rgba(255, 99, 132, 0.7)',
+                'rgba(255, 99, 132, 0.7)'
               ],
               borderWidth: 1
             },
@@ -73,20 +73,20 @@ axios
               label: 'React',
               data: [reactResponse.stargazers_count, reactResponse.subscribers_count, reactResponse.forks],
               backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)'
               ],
               borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(54, 162, 235, 0.7)'
               ],
               borderWidth: 1
             },
@@ -94,20 +94,20 @@ axios
               label: 'Angular',
               data: [angularResponse.stargazers_count, angularResponse.subscribers_count, angularResponse.forks],
               backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
               ],
               borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(75, 192, 192, 0.7)'
               ],
               borderWidth: 1
             },
@@ -115,20 +115,20 @@ axios
               label: 'Svelte',
               data: [svelteResponse.stargazers_count, svelteResponse.subscribers_count, svelteResponse.forks],
               backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
               ],
               borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(153, 102, 255, 0.7)'
               ],
               borderWidth: 1
             },
@@ -136,20 +136,20 @@ axios
               label: 'EmberJS',
               data: [emberResponse.stargazers_count, emberResponse.subscribers_count, emberResponse.forks],
               backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
                 'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
               ],
               borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(255, 206, 86, 0.7)',
+                'rgba(255, 206, 86, 0.7)',
+                'rgba(255, 206, 86, 0.7)',
+                'rgba(255, 206, 86, 0.7)',
+                'rgba(255, 206, 86, 0.7)',
+                'rgba(255, 206, 86, 0.7)'
               ],
               borderWidth: 1
             },
@@ -166,6 +166,12 @@ axios
     })
   );
 
+
+  // 'rgba(54, 162, 235, 0.2)',
+  //               'rgba(255, 206, 86, 0.2)',
+  //               'rgba(75, 192, 192, 0.2)',
+  //               'rgba(153, 102, 255, 0.2)',
+  //               'rgba(255, 159, 64, 0.2)'
 
 // fetchGithub(react, "React");
 // fetchGithub(vue, "Vue");
